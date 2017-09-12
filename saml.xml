@@ -1,0 +1,55 @@
+<samlp:Response
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+    ID="Rf75c3375-1fa9-4f02-8f90-52c56479cde1"
+    Version="2.0"
+    IssueInstant="2012-01-25T17:57:29Z"
+    Destination="https://NoMoreClipboard.com">
+ <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://saml.example.com</saml:Issuer>
+ <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+   <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+   <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+   <Reference URI="#Rf75c3375-1fa9-4f02-8f90-52c56479cde1">
+    <Transforms>
+     <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+     <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+    </Transforms>
+    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+    <DigestValue>5zno9n7vQQIc6bnVbiaUM4272xk=</DigestValue>
+   </Reference>
+  </SignedInfo>
+  <SignatureValue>LlHu/jHpIbQAskUs+S1YCqvAo+E+nZnNX3QHZMTJJQ3nCK6Q9ApQk4akUoEqKRd77oJ/PVOXoqnUfWIdE1Mbxg78LCtYSqzT1fvw3Jbwi+eG14+PgjMP5Izx1bTtvFrg2cWI7lOsFrIRxepBgbvD+krTcJMAxVHJSOeYciMM+Vw=</SignatureValue>
+ </Signature>
+ <samlp:Status>
+  <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+ </samlp:Status>
+ <saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Version="2.0" ID="A1d34bbbe-7a18-4bf5-adce-30ae36c762cd" IssueInstant="2012-01-25T17:57:29Z">
+  <saml:Issuer>https://saml.example.com</saml:Issuer>
+  <saml:Subject>
+   <NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent">e9f91ee7-8cd0-4017-9a6c-c8e13be33645</NameID>
+   <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+    <saml:SubjectConfirmationData Recipient="https://NoMoreClipboard.com" />
+   </saml:SubjectConfirmation>
+  </saml:Subject>
+  <saml:AttributeStatement>
+   <saml:Attribute Name="userid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+    <saml:AttributeValue>123456789</saml:AttributeValue>
+   </saml:Attribute>
+  </saml:AttributeStatement>
+  <saml:AttributeStatement>
+   <saml:Attribute Name="firstname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+    <saml:AttributeValue>Sam</saml:AttributeValue>
+   </saml:Attribute>
+  </saml:AttributeStatement>
+  <saml:AttributeStatement>
+   <saml:Attribute Name="lastname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+    <saml:AttributeValue>Jones</saml:AttributeValue>
+   </saml:Attribute>
+  </saml:AttributeStatement>
+  <saml:AuthnStatement AuthnInstant="2012-01-25T17:57:29Z">
+   <saml:AuthnContext>
+    <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml:AuthnContextClassRef>
+   </saml:AuthnContext>
+  </saml:AuthnStatement>
+ </saml:Assertion>
+</samlp:Response>
