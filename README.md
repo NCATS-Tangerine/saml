@@ -8,11 +8,10 @@ Requires: Python3
 python3.6 -m venv <env>
 source <env>/bin/activate
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook SAML_Authentication.ipynb 
 ```
-This should open a jupyter notebook window. Open the SAML_Authentication notebook and runn the cells.
-
-In a terminal window, run:
+This should open a jupyter notebook window. Run the cells. 
+Then, in a terminal window, run:
 
 ```
 python client.py localhost saml.xml
