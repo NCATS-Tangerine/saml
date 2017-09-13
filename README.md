@@ -2,6 +2,11 @@
 
 This is an experiment towards a Jupyter notebook authenticating to a SAML IdP.
 
+Nutshell:
+* Python process spawns HTTP server
+* PySAML integration interacts with the IdP
+* Eventually, we store a SAML Response assertion and use that to access protected services.
+
 ## Install
 
 Requires: Python3
