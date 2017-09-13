@@ -1,5 +1,7 @@
 # saml
 
+This is an experiment towards a Jupyter notebook authenticating to a SAML IdP.
+
 ## Install
 
 Requires: Python3
