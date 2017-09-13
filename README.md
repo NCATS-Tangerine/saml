@@ -5,7 +5,7 @@
 Requires: Python3
 
 ```
-git@github.com:NCATS-Tangerine/saml.git
+git clone git@github.com:NCATS-Tangerine/saml.git
 cd saml
 python3.6 -m venv <env>
 source <env>/bin/activate
