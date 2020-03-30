@@ -1,7 +1,7 @@
 appnope==0.1.0
 asn1crypto==0.22.0
 autovizwidget==0.12.4
-bleach==2.0.0
+bleach==3.1.4
 bravado==9.0.2
 bravado-core==4.8.3
 certifi==2017.7.27.1
